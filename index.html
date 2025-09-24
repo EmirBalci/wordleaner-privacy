@@ -83,7 +83,7 @@
             <li>Öğrenilen kelimeler</li>
             <li>Quiz sonuçları</li>
             <li>Puanlar ve seviyeler</li>
-            <li>Arkadaş listesi</li>
+            <li>Arkadaş/çok oyunculu mod verileri (oda/katılım bilgileri, skorlar)</li>
             <li>Uygulama kullanım istatistikleri</li>
         </ul>
 
@@ -92,7 +92,8 @@
             <li>Cihaz türü ve modeli</li>
             <li>İşletim sistemi sürümü</li>
             <li>Uygulama sürümü</li>
-            <li>Çökme raporları</li>
+            <li>Çökme raporları ve performans ölçümleri</li>
+            <li>Reklam tanımlayıcıları (ör. AAID/IDFA) ve yaklaşık konum (AdMob/analitik kapsamında)</li>
         </ul>
 
         <h2>2. Verilerin Kullanım Amacı</h2>
@@ -101,9 +102,16 @@
             <li>Hesabınızı oluşturmak ve yönetmek</li>
             <li>Öğrenme ilerlemenizi takip etmek</li>
             <li>Kişiselleştirilmiş içerik sunmak</li>
-            <li>Arkadaşlarınızla yarışma özelliği sağlamak</li>
+            <li>Hile ve kötüye kullanımı tespit etmek ve önlemek</li>
             <li>Uygulama performansını iyileştirmek</li>
             <li>Teknik sorunları çözmek</li>
+        </ul>
+
+        <h3>2.1 Hukuki Dayanaklar (KVKK/GDPR)</h3>
+        <ul>
+            <li>Hesap yönetimi ve temel işlevler: Sözleşmenin ifası</li>
+            <li>Hata/performans izleme: Meşru menfaat</li>
+            <li>Kişiselleştirilmiş reklam (AB/UK): Açık rıza</li>
         </ul>
 
         <h2>3. Veri Paylaşımı</h2>
@@ -113,6 +121,8 @@
             <li><strong>Firebase:</strong> Veri depolama ve kimlik doğrulama</li>
             <li><strong>Google Sign-In:</strong> Sosyal medya girişi</li>
             <li><strong>AdMob:</strong> Reklam gösterimi</li>
+            <li><strong>Cloud Functions:</strong> İş mantığı ve güvenli API proxy (ör. OpenAI)</li>
+            <li><strong>OpenAI:</strong> Kelime üretimi/örnek cümleler için, yalnızca Cloud Functions proxy üzerinden</li>
         </ul>
 
         <h3>3.2 Veri Satışı</h3>
@@ -121,16 +131,17 @@
         <h2>4. Veri Güvenliği</h2>
         <p>Verilerinizi korumak için:</p>
         <ul>
-            <li>Şifreli bağlantılar kullanırız</li>
-            <li>Güvenli sunucularda saklarız</li>
-            <li>Düzenli güvenlik güncellemeleri yaparız</li>
+            <li>Şifreli bağlantılar (TLS) kullanırız</li>
+            <li>Duyarlı anahtarları sunucu tarafı konfigürasyonda tutarız (istemciye dağıtmayız)</li>
+            <li>Erişim yetkilerini en az ayrıcalık ilkesiyle sınırlarız</li>
+            <li>Düzenli güvenlik güncellemeleri ve iz kayıtları uygularız</li>
         </ul>
 
         <h2>5. Çocukların Gizliliği</h2>
-        <p>Uygulamamız 13 yaş altı çocuklar için tasarlanmamıştır. Bilerek 13 yaş altı çocuklardan kişisel bilgi toplamayız.</p>
+        <p>Uygulamamız 13 yaş altı çocuklar için tasarlanmamıştır ve çocuklara yönelik değildir. Bilerek 13 yaş altı çocuklardan kişisel bilgi toplamayız.</p>
 
         <h2>6. Kullanıcı Hakları</h2>
-        <p>Şu haklara sahipsiniz:</p>
+        <p>Şu haklara sahipsiniz ve bu hakları uygulama içindeki ayarlar veya aşağıdaki iletişim kanalı üzerinden kullanabilirsiniz. Taleplere makul süre içinde (en geç 30 gün) yanıt veririz.</p>
         <ul>
             <li>Verilerinize erişim</li>
             <li>Verilerinizi düzeltme</li>
@@ -139,22 +150,29 @@
             <li>Veri taşınabilirliği</li>
         </ul>
 
-        <h2>7. Çerezler ve Takip Teknolojileri</h2>
-        <p>Uygulamamız çerez kullanmaz, ancak üçüncü taraf reklam hizmetleri kendi çerezlerini kullanabilir.</p>
+        <h2>7. Çerezler, SDK’ler ve Reklam Onayı</h2>
+        <p>Mobil uygulama çerez yerine çoğunlukla SDK’ler ve benzeri teknolojiler kullanır. Üçüncü taraf reklam ve analitik sağlayıcıları (ör. AdMob) reklam tanımlayıcıları ve benzeri teknolojiler kullanabilir.</p>
+        <p>AB/EEA ve Birleşik Krallık kullanıcıları için kişiselleştirilmiş reklam/ölçüm onayı, IAB TCF 2.2 çerçevesi veya eşdeğeri bir onay ekranı ile alınır; onay vermediğiniz sürece kişiselleştirilmiş reklam gösterilmez. Tercihlerinizi dilediğiniz zaman uygulama içinden değiştirebilirsiniz.</p>
 
-        <h2>8. Gizlilik Politikası Değişiklikleri</h2>
+        <h2>8. Saklama Süreleri</h2>
+        <p>Hesap verileri, hesabınızı sildikten sonra en fazla 30 gün içinde silinir. Yedekler döngüsel olarak en geç 90 gün içinde temizlenir. Yasal yükümlülükler kapsamında daha uzun süre saklanması gereken veriler istisna olabilir.</p>
+
+        <h2>9. Sınır Ötesi Veri Aktarımları</h2>
+        <p>Hizmet sağlayıcılarımız nedeniyle verileriniz AB/EEA dışına aktarılabilir. Bu aktarımlar için Standart Sözleşme Maddeleri (SCCs) veya eşdeğer koruma önlemleri uygulanır. Barındırma bölgeleri ve aktarım detayları talep üzerine paylaşılabilir.</p>
+
+        <h2>10. Gizlilik Politikası Değişiklikleri</h2>
         <p>Bu politikayı güncelleyebiliriz. Önemli değişiklikler için sizi bilgilendireceğiz.</p>
 
-        <h2>9. İletişim</h2>
+        <h2>11. İletişim</h2>
         <div class="contact-info">
             <p>Gizlilik politikamız hakkında sorularınız için:</p>
             <ul>
                 <li>E-posta: privacy@wordleaner.com</li>
-                <li>Adres: [Şirket adresi]</li>
+                <li>Adres: [Şirket adı ve açık adres]</li>
             </ul>
         </div>
 
-        <h2>10. Yasal Uyarı</h2>
+        <h2>12. Yasal Uyarı</h2>
         <p>Bu gizlilik politikası Türkiye Cumhuriyeti yasalarına uygun olarak hazırlanmıştır.</p>
 
         <div class="footer">
